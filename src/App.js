@@ -11,8 +11,13 @@ const cities = [
 
 function App() {
   return (
-    <div className="App">
-      <CityList cities={cities} />
+    <div className="app">
+      <div className="cities">
+        <CityList cities={cities} />
+      </div>
+      <div className="active-city">
+        ACTIVE CITY
+      </div>
     </div>
   );
 }
