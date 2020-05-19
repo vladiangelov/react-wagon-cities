@@ -2,7 +2,7 @@ import React from 'react';
 
 const City = (props) => {
   return(
-    <p>TODO</p>
+    <p className="list-group-item">props.city.name</p>
   )
 }
 

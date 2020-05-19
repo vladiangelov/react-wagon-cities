@@ -1,11 +1,16 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import CityList from './components/CityList';
 
 function App() {
   return (
-    <div className="App">
-      <CityList />
+    <div className="app">
+      <div className="cities">
+        <CityList />
+      </div>
+      <div className="active-city">
+        ACTIVE CITY
+      </div>
     </div>
   );
 }
