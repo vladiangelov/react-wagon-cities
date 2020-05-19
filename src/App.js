@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.scss';
-import CityList from './components/CityList';
+import CityList from './containers/CityList';
 
 const cities = [
   { name: 'Paris', address: '16 Villa Gaudelet, 75011 Paris', slug: 'paris' },

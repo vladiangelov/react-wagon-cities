@@ -5,7 +5,6 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from './reducers/rootReducer';
 
-import './app.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
