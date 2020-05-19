@@ -3,8 +3,15 @@ import City from './City';
 
 const CityList = (props) => {
   return (
-    <p>TODO</p>
+    <div >
+      {props.cities.map((city) => {
+        return <City city={city} key ={city.name} />;
+      })}
+    </div>
   )
 }
 
 export default CityList;
+
+
+
