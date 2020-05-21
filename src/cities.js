@@ -1,8 +1,3 @@
-import React from 'react';
-import './App.scss';
-import CityList from './containers/CityList';
-import ActiveCity from './containers/ActiveCity';
-
 const cities = [
   { name: "Paris", address: "16 Villa Gaudelet, 75011 Paris", slug: "paris" },
   { name: "London", address: "14-22 Elder St, London E1 6BT", slug: "london" },
@@ -30,18 +25,4 @@ const cities = [
   { name: "Lyon", address: "23 Rue Paul Montrochet, 69002 Lyon", slug: "lyon" }
 ];
 
-
-function App() {
-  return (
-    <div className="app">
-      <div className="cities">
-        <CityList />
-      </div>
-      <div>
-        <ActiveCity city={cities[1]}/>
-      </div>
-    </div>
-  );
-}
-
-export default App;
+export default cities;
