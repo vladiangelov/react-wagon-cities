@@ -4,7 +4,7 @@ const citiesReducer = (state, action) => {
   }
   switch (action.type) {
     case 'SET_CITIES':
-      return action.paylod;
+      return action.payload;
     default:
       return state;
   }
