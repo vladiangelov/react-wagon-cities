@@ -22,7 +22,7 @@ class City extends Component {
       classes += " highlighted-city";
     }
     return(
-      <p className={classes}onClick={this.handleClick}>{this.props.city.name}</p>
+      <p className={classes} onClick={this.handleClick}>{this.props.city.name}</p>
     )
   }
 }
