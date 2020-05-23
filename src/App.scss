@@ -1,6 +1,8 @@
 body {
   color: white;
   background-color: black;
+  width: 1000px;
+  margin: auto;
 }
 
 .app {
@@ -29,4 +31,8 @@ body {
 .list-group-item {
   background-color: transparent;
   cursor: pointer;
+}
+
+.highlighted-city {
+  border: 1px dashed red;
 }

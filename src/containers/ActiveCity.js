@@ -1,14 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-const ActiveCity = (props) => {
-  const url = `https://kitt.lewagon.com/placeholder/cities/${props.city.slug}`;
-  return (
-    <div className="active-city">
-      <p>{props.city.name}</p>
-      <p>{props.city.address}</p>
-      <img src={url} alt=""/>
-    </div>
-  )
+class ActiveCity extends Component {
+
+  render() {
+    const url = `https://kitt.lewagon.com/placeholder/cities/${this.props.activeCity.slug}`;
+    return (
+      <div className="active-city">
+        <p>{this.props.activeCity.name}</p>
+        <p>{this.props.activeCity.address}</p>
+        <img src={url} alt=""/>
+      </div>
+    )
+  }
 }
 
-export default ActiveCity;
+const mapStateToProps = (state) => {
+  return {
+    activeCity: state.activeCity
+  };
+};
+
+export default connect(mapStateToProps)(ActiveCity);
